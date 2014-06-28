@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="15sp"
+        android:text="@string/main_subtitle" />
+
+    <TableLayout
+        android:id="@+id/main_test_results_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:visibility="invisible" >
+
+        <TableRow
+            android:id="@+id/main_test_row_dns_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:gravity="left"
+                android:text="@string/settings_dns_check_title" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/main_test_row_dns_check_verdict"
+                android:gravity="right"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/main_test_row_http_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:gravity="left"
+                android:text="@string/settings_http_check_title" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/main_test_row_http_check_verdict"
+                android:gravity="right"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/main_test_row_google_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:gravity="left"
+                android:text="@string/settings_google_check_title" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/main_test_row_google_check_verdict"
+                android:gravity="right"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15sp" >
+
+            <TextView
+                android:id="@+id/main_test_last_run_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10sp"
+                android:layout_span="2" />
+
+        </TableRow>
+    </TableLayout>
+    
+    <TextView
+        android:id="@+id/main_tests_paused"
+        android:text="@string/main_tests_paused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+        android:visibility="invisible" />
+    
+</LinearLayout>

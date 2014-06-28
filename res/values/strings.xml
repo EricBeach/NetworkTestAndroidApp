@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Network Test</string>
+
+    <!--  Action Bar -->
+    <string name="action_about">About</string>
+    <string name="action_settings">Settings</string>
+
+    <!--  Main Activity -->
+    <string name="main_subtitle">Network Status</string>
+    <string name="main_check_result_no_filtering">No Problem Detected</string>
+    <string name="main_check_result_filtering">Problem Detected</string>
+    <string name="main_tests_paused">Network inactive. Tests paused.</string>
+    
+    <!-- About Activity -->
+    <string name="about_title">About App</string>
+    <string name="about_about_header">ABOUT</string>
+    <string name="about_contents">The Network Test application monitors your Wi-Fi and cellular Internet network connection to test whether it is being filtered or tampered with.\n\nYou may set what action the Network Test application should take if network filtering is discovered. Possible actions include alerting you, disabling your Internet connection, and doing nothing. You can also set how often you want the Internet connection checked.\n\nRegularly checking for tampering or filtering of your network connection is important as a filtered connection is a potentially serious security problem not to mention a considerable annoyance.</string>
+    <string name="about_build_header">BUILD</string>
+
+    <!-- Settings Activity (and Preference Fragments) -->
+    <string name="settings_title">Settings</string>
+
+    <string name="settings_section_title_check">TESTS</string>
+    <string name="settings_dns_check_summary">DNS queries not returning accurate results</string>
+    <string name="settings_dns_check_title">DNS Poisoning</string>
+    <string name="settings_http_check_summary">HTTP requests being blocked, delayed, or tampered with</string>
+    <string name="settings_http_check_title">HTTP Filtering</string>
+    <string name="settings_google_check_summary">Google websites and services available</string>
+    <string name="settings_google_check_title">Google Availability</string>
+
+    <string name="settings_section_title_frequency">FREQUENCY</string>
+    <string name="settings_frequency_title">Test Frequency</string>
+    <string name="settings_frequency_dialog_title">Network Test Frequency</string>
+
+    <string-array name="settings_frequency_entries">
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>24 hours</item>
+    </string-array>
+
+    <string-array name="settings_frequency_entryvalues">
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+        <item>86400</item>
+    </string-array>
+
+    <string name="settings_section_title_action">ACTIONS</string>
+    <string name="settings_actions_notify_title">Notify me</string>
+    <string name="settings_actions_disconnect_wifi">Disconnect Wi-Fi</string>
+    <string name="settings_actions_disconnect_celluar">Disconnect Celluar Data</string>
+
+    <!-- Test Runner Service -->
+    <string name="main_service_name">Network Test Monitoring Service</string>
+    
+    <!-- Notifications Launched from Background Manager Service -->
+    <string name="notification_tests_active_title">Network Test Activee</string>
+    
+</resources>

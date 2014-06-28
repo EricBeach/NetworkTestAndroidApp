@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/settings_section_title_check"
+        android:key="pref_key_check_settings">
+        <CheckBoxPreference
+            android:key="pref_key_check_dns_poisoning"
+            android:summary="@string/settings_dns_check_summary"
+            android:title="@string/settings_dns_check_title"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="pref_key_check_http_filtering"
+            android:summary="@string/settings_http_check_summary"
+            android:title="@string/settings_http_check_title"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="pref_key_check_google_availability"
+            android:summary="@string/settings_google_check_summary"
+            android:title="@string/settings_google_check_title"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/settings_section_title_frequency"
+        android:key="pref_key_frequency_settings">
+        <ListPreference
+            android:key="pref_key_frequency"
+            android:title="@string/settings_frequency_title"
+            android:dialogTitle="@string/settings_frequency_dialog_title"
+            android:entries="@array/settings_frequency_entries"
+            android:entryValues="@array/settings_frequency_entryvalues"
+            android:numeric="integer" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/settings_section_title_action"
+        android:key="pref_key_action_settings">
+        <CheckBoxPreference
+            android:key="pref_key_action_notify_me"
+            android:title="@string/settings_actions_notify_title"
+            android:defaultValue="true"
+            android:numeric="integer" />
+        <CheckBoxPreference
+            android:key="pref_key_action_disconnect_wifi"
+            android:title="@string/settings_actions_disconnect_wifi"
+            android:defaultValue="false"
+            android:numeric="integer" />
+        <CheckBoxPreference
+            android:key="pref_key_action_disconnect_celluar"
+            android:title="@string/settings_actions_disconnect_celluar"
+            android:defaultValue="false"
+            android:numeric="integer" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
